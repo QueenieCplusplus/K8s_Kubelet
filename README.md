@@ -65,4 +65,29 @@ Docker endpoint 位址
 設定映像檔佔用磁碟空間比值，超過門檻便會處理不用的影像檔，Garbage Collection 釋放磁碟空間，需搭配上敘設定的剩餘磁碟空間下限。
 
       --image-gc-high-threshhold=90
+   
+Master 服務的命名空間
+
+      --master-service-namespace="default"
+     
+節點中可運行 Pod 數量的上限
+
+      --max-pod=40
+      
+k8s的 kuberlet 回報 Node 狀態給 Master 的 間隔時間，預設為 10s
+
+      --node-status-update-frequency=10s
+      
+節點註冊自身資訊至 API server。
+
+      --register-node=true
+      
+分配 CIDR 位址，提供給 Pod，此適用於單機（倘若為叢集，會從 Api Server 中取得 CIDR 設定）
+
+     --pod-cidr=""
+     
+設定映像檔名稱例如 eee 從何處下載例如 ccc.io，倘若遇到連線過慢或是防火牆阻擋，此參數可以解決問題，從別處取得映像檔並存入私有 Registry 儲存庫。
+
+     --pod-infra-container-image="ccc.io/google_containers/eee:0.8.0"
+
       
