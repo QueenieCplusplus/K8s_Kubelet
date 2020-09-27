@@ -1,4 +1,4 @@
-# K8s_Kubelete
+# K8s_Kubelet
 Software for Node
 
 * 參數表
