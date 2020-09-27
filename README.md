@@ -90,4 +90,6 @@ k8s的 kuberlet 回報 Node 狀態給 Master 的 間隔時間，預設為 10s
 
      --pod-infra-container-image="ccc.io/google_containers/eee:0.8.0"
 
-      
+容器中執行命令或是進行連接阜轉送過程誤徵會產生輸、出入串流，為了控制連線（閒置）逾時的關閉時間。
+
+    --streaming-connection-idle-timeout=0
