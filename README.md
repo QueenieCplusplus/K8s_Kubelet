@@ -42,3 +42,16 @@ Kuberlet 設定檔路徑或是目錄名稱
 
       --config=""
       
+Docker endpoint 位址
+
+      --docker-endpoint="unix:///var/run/docker.sock"
+      
+容器的類型，預設為 docker
+
+      --container-runtime="docker"
+      
+根據 Node.Spec.PodCIDR 值來配置 cbr0
+
+      --configure-cbr0=true
+      
+      
